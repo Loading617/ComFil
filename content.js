@@ -1,36 +1,33 @@
-function addFilterButton() {
-    let commentSection = document.querySelector("#comments");
-    if (!commentSection) return;
+function addSearchInput() {
 
-    let existingButton = document.getElementById("filter-comments-btn");
-    if (existingButton) return; // Avoid duplicate buttons
+    const sortByContainer = document.querySelector("#sort-menu");
+    if (!sortByContainer || document.getElementById("comment-search-input")) return;
 
-    let button = document.createElement("button");
-    button.id = "filter-comments-btn";
-    button.innerText = "Filter Comments";
-    button.style.padding = "10px";
-    button.style.margin = "10px";
-    button.style.cursor = "pointer";
-    button.style.backgroundColor = "#ff0000";
-    button.style.color = "white";
-    button.style.border = "none";
-    button.style.borderRadius = "5px";
+    const input = document.createElement("input");
+    input.type = "text";
+    input.id = "comment-search-input";
+    input.placeholder = "Search comments";
+    input.style.marginLeft = "10px";
+    input.style.padding = "5px";
+    input.style.border = "1px solid #ccc";
+    input.style.borderRadius = "4px";
+    input.style.fontSize = "14px";
 
-    button.addEventListener("click", filterComments);
-
-    commentSection.prepend(button);
-}
-
-function filterComments() {
-    let comments = document.querySelectorAll("#content-text");
-    comments.forEach(comment => {
-        let text = comment.innerText;
-        if (!text.match(/\b\d{1,2}:\d{2}\b/) && !text.match(/#[a-zA-Z0-9]+/)) {
-            comment.parentElement.style.display = "none"; 
-        }
+    input.addEventListener("input", () => {
+        const query = input.value.toLowerCase();
+        const comments = document.querySelectorAll("#content-text");
+        comments.forEach(comment => {
+            const text = comment.innerText.toLowerCase();
+            comment.closest("ytd-comment-thread-renderer").style.display = text.includes(query) ? "" : "none";
+        });
     });
+
+    sortByContainer.parentElement.appendChild(input);
 }
 
-// Run when comments load
-const observer = new MutationObserver(addFilterButton);
+const observer = new MutationObserver(() => {
+    addSearchInput();
+});
 observer.observe(document.body, { childList: true, subtree: true });
+
+addSearchInput();
