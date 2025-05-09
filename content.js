@@ -5,7 +5,7 @@ function addSearchInput() {
     const input = document.createElement("input");
     input.type = "text";
     input.id = "comment-search-input";
-    input.placeholder = "Search comments";
+    input.placeholder = "Search comments...";
     input.style.marginLeft = "10px";
     input.style.padding = "5px";
     input.style.border = "1px solid #ccc";
