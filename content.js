@@ -1,5 +1,4 @@
 function addSearchInput() {
-
     const sortByContainer = document.querySelector("#sort-menu");
     if (!sortByContainer || document.getElementById("comment-search-input")) return;
 
@@ -14,11 +13,30 @@ function addSearchInput() {
     input.style.fontSize = "14px";
 
     input.addEventListener("input", () => {
-        const query = input.value.toLowerCase();
+        const query = input.value.trim().toLowerCase();
+        const isHashtag = query.startsWith("#");
+        const isTimestamp = /^\d{1,2}:\d{2}$/.test(query);
         const comments = document.querySelectorAll("#content-text");
+
         comments.forEach(comment => {
             const text = comment.innerText.toLowerCase();
-            comment.closest("ytd-comment-thread-renderer").style.display = text.includes(query) ? "" : "none";
+            const container = comment.closest("ytd-comment-thread-renderer");
+
+            if (!container) return;
+
+            let match = false;
+
+            if (!query) {
+                match = true;
+            } else if (isHashtag) {
+                match = text.includes(query);
+            } else if (isTimestamp) {
+                match = text.includes(query);
+            } else {
+                match = text.includes(query);
+            }
+
+            container.style.display = match ? "" : "none";
         });
     });
 
