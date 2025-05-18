@@ -26,3 +26,16 @@ body{
 .button-container button{
     flex-grow: 1;;
 }
+
+.logo-button{
+    height: 0;
+    padding: 0;
+    transition: 
+        height 0.2s ease in,
+        margin-bottom 0.2s ease in;
+    overflow: hidden;
+    cursor: default;
+    background: var(--comfil-charcoal-black);
+    color: var(--comfil-white);
+    flex-basis: 100%;
+}
