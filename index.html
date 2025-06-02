@@ -1,25 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ComFil</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="popup.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
 </head>
+
 <body>
     <div id="header">
-    <a href="comfil.com" target="_blank">
-    <img src="icons/comfil.png" alt="ComFil" data-canonical-src="icons/comfil.png" class="logo">
-    </a>
-    <div id="nameofDev">by developer Jahim Sankoh</div>
-    <div id="version-text">1.0</div>
-    </div>
+        <a href="https://comfil.com" target="_blank">
 
-      <div id="button-container">
-        <button id="helpbutton">Help</button>
-        <button id="githubbutton">GitHub</button>
-        <button id="changelogbutton">Changelog</button>
-      </div>
+            <img src="./icons/comfil.png" alt="ComFil Logo" width="24" height="24"
+                data-canonial-src="icons/comfil.png" class="logo">
+        </a>
+
+        <div id="title">ComFil</div>
+
+        <div id="developerName">Created by Jahim Sankoh</div>
+
+        <div id="releaseversion">Release Version 1.0</div>
+
+    </div>
+    <div id="button-container" ”>
+        <button id="help-button">Help</button>
+        <a href="https://comfil.com/settings" target="_blank">
+        
+        <img src="./icons/settings.png" alt="Settings" width="24" height="24" class="settingsIcon">
+        <button id="github-button">GitHub</button>
+        <button id="changelog-button">Changelog</button>
+    </div>
+    <script src="./js/background.js"></script>
 </body>
+
 </html>
