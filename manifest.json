@@ -2,7 +2,21 @@
   "manifest_version": 3,
   "name": "ComFil",
   "version": "1.0",
-  "description": "Adds a button to filter comments with timestamps or hashtags",
+  "description": "Adds a comment field to search comments on YouTube",
+  "homepage_url": "https://comfil.com",
+  "action": {
+    "default_popup": "index.html"
+  },
+  "icons": {
+    "16": "icons/comfil_16x16.png",
+    "32": "icons/comfil_32x32.png",
+    "48": "icons/comfil_48x48.png",
+    "128": "icons/comfil_128x128.png"
+  },
+  "options_ui": {
+    "page": "settings.html",
+    "open_in_tab": true
+  },
   "permissions": ["scripting", "activeTab"],
   "host_permissions": ["https://www.youtube.com/*"],
   "background": {
@@ -13,9 +27,5 @@
       "matches": ["https://www.youtube.com/*"],
       "js": ["content.js"]
     }
-  ],
-  "action": {
-    "default_popup": "popup.html",
-    "default_icon": "icon.png"
-  }
+  ]
 }
