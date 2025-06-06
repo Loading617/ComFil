@@ -1,41 +1,71 @@
-body{
+body {
     width: 240px;
-    overflow: hidden;
+    height: 340px;
+    background-color: #232323;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: 16px;
 }
 
-.hidden{
-    display: hidden;
+.logo {
+    width: 100px;
+    height: 100px;
 }
 
-.logo{
-    max-width: 40px;
+.title {
+    color: #384c67;
 }
 
-.container{
-    font-size: small;
-    padding: 12px;
+.NameofDev {
+    color: #384c67;
 }
 
-.button-container{
-    display: flex;
+.ver {
+    color: #384c67;
+}
+
+.button-container {
+    display: grid;
     flex-wrap: wrap;
-    row-gap: 2px;
-    padding: 0 8px;
+    row-gap: 8px;
 }
 
-.button-container button{
-    flex-grow: 1;;
+.help-button {
+    background-color: #384c67;
+    color: #232323;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
-.logo-button{
-    height: 0;
-    padding: 0;
-    transition: 
-        height 0.2s ease in,
-        margin-bottom 0.2s ease in;
-    overflow: hidden;
-    cursor: default;
-    background: var(--comfil-charcoal-black);
-    color: var(--comfil-white);
-    flex-basis: 100%;
+.settings-button {
+    background-color: #384c67;
+    color: #232323;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.github-button {
+    background-color: #384c67;
+    color: #232323;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.changelog-button {
+    background-color: #384c67;
+    color: #232323;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
 }
