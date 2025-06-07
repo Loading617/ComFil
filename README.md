@@ -3,4 +3,4 @@
 </p>
 
 # ComFil
-Filter Comments by Hashtags &amp; Timed on YouTube
+Filter Comments by Search on YouTube
