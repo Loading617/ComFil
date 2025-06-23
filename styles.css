@@ -25,7 +25,8 @@ body {
 }
 
 .button-container {
-    display: grid;
+    display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     row-gap: 8px;
 }
