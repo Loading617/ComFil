@@ -51,3 +51,12 @@ body {
     cursor: pointer;
 }
 
+.report-a-bug-button {
+    background-color: #384c67;
+    color: #232323;
+    font-family: 'Franklin Gothic Medium' 'Arial Narrow', Arial, sans-serif;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
