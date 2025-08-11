@@ -31,7 +31,7 @@ function addSearchAndFilterUI() {
    mentionBtn.title = "Show only mention comments";
    styleFilterButton(mentionBtn);
 
-   input.addEventListener("input", ()=> {
+   input.addEventListener("input", () => {
        filterComments(input.value);
    });
 
@@ -102,6 +102,7 @@ observer.observe(document.body, { childList: true, subtree: true });
 
 addSearchAndFilterUI();
 }
+
 
 
 
