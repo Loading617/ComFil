@@ -3,4 +3,4 @@
 </p>
 
 # ComFil
-Filter Comments by Search on YouTube
+Filter Comments on YouTube Extension
