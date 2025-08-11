@@ -23,7 +23,7 @@ function addSearchAndFilterUI() {
 
    const timeBtn = document.createElement("button");
    timeBtn.innerText = "8:00time";
-   timeBtn.title = "Show only recent comments";
+   timeBtn.title = "Show only timestamp comments";
    styleFilterButton(timeBtn);
 
    const mentionBtn = document.createElement("button");
@@ -102,6 +102,7 @@ observer.observe(document.body, { childList: true, subtree: true });
 
 addSearchAndFilterUI();
 }
+
 
 
 
