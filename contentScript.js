@@ -22,7 +22,7 @@ function addSearchAndFilterUI() {
    styleFilterButton(hashtagBtn);
 
    const timeBtn = document.createElement("button");
-   timeBtn.innerText = "🕒";
+   timeBtn.innerText = "8:00time";
    timeBtn.title = "Show only recent comments";
    styleFilterButton(timeBtn);
 
@@ -102,5 +102,6 @@ observer.observe(document.body, { childList: true, subtree: true });
 
 addSearchAndFilterUI();
 }
+
 
 
