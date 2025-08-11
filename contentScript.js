@@ -27,7 +27,7 @@ function addSearchAndFilterUI() {
    styleFilterButton(timeBtn);
 
    const mentionBtn = document.createElement("button");
-   mentionBtn.innerText = "@";
+   mentionBtn.innerText = "@at";
    mentionBtn.title = "Show only mention comments";
    styleFilterButton(mentionBtn);
 
@@ -102,3 +102,4 @@ observer.observe(document.body, { childList: true, subtree: true });
 
 addSearchAndFilterUI();
 }
+
