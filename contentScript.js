@@ -17,7 +17,7 @@ function addSearchAndFilterUI() {
    btnContainer.style.marginLeft = "8px";
 
    const hashtagBtn = document.createElement("button");
-   hashtagBtn.innerText = "#";
+   hashtagBtn.innerText = "#hash";
    hashtagBtn.title = "Show only hashtag comments";
    styleFilterButton(hashtagBtn);
 
@@ -102,4 +102,5 @@ observer.observe(document.body, { childList: true, subtree: true });
 
 addSearchAndFilterUI();
 }
+
 
