@@ -2,7 +2,7 @@ body {
     width: 240px;
     height: 340px;
     background-color: #232323;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font: 'Franklin Gothic Medium';
     text-align: center;
     font-size: 16px;
 }
@@ -35,7 +35,7 @@ body {
 .github-button {
     background-color: #384c67;
     color: #232323;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font: 'Franklin Gothic Medium';
     border: none;
     padding: 10px 20px;
     border-radius: 4px;
@@ -45,7 +45,7 @@ body {
 .changelog-button {
     background-color: #384c67;
     color: #232323;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font: 'Franklin Gothic Medium';
     border: none;
     padding: 10px 20px;
     border-radius: 4px;
@@ -55,11 +55,9 @@ body {
 .report-a-bug-button {
     background-color: #384c67;
     color: #232323;
-    font-family: 'Franklin Gothic Medium' 'Arial Narrow', Arial, sans-serif;
+    font: 'Franklin Gothic Medium';
     border: none;
     padding: 10px 20px;
     border-radius: 4px;
     cursor: pointer;
 }
-
-
