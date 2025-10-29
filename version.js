@@ -1,1 +1,0 @@
-document.getElementById("ver").innerText = "Release " + chrome.runtime.getManifest().version;
