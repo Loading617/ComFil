@@ -1,8 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: 'Franklin Gothic Medium';
+}
+
 body {
     width: 240px;
     height: 340px;
     background-color: #232323;
-    font: 'Franklin Gothic Medium';
     text-align: center;
     font-size: 16px;
 }
@@ -61,3 +67,4 @@ body {
     border-radius: 4px;
     cursor: pointer;
 }
+
